@@ -1437,47 +1437,31 @@
             //   <•----------------------------------•>
             //   `);
             if (proj.displayType === "image") {
-              //console.log("proj.displayType:j3i ", proj.displayType);
               /**----------===| push to array use for animation |===----------**/
               aImagesCount[aImagesCount.length] = imgs;
               /**----------===| RIGHT COLUMN PERCENTAGE |===----------**/
               twoColumnsImages.fTwoColumnsQueries(gdContainerWidth, proj.imgRightColumnPercent, proj.imagesWidth, proj.imagesHeight);
               /**----------===| push to array |===----------**/
               aImagesRightColumnPercent[aImagesRightColumnPercent.length] = proj.imgRightColumnPercent;
-              //aImagesOrigWidth[aImagesOrigWidth.length] = proj.imagesWidth;
-              //aImagesOrigHeight[aImagesOrigHeight.length] = proj.imagesHeight;
-              //console.log("aImagesHeight: ", aImagesHeight);
-              //console.log("proj.imgRightColumnPercent j3: ", proj.imgRightColumnPercent);
-
-              /**----------===| push to array |===----------**/
               aImagesWidth[aImagesWidth.length] = twoColumnsImages.RightColumn;
               aImagesHeight[aImagesHeight.length] = twoColumnsImages.NewHeight;
-              //let fluidContainerIds = $("#" + proj.title + "_FluidContainer_" + j3);
 
               /**----------===| CREATE IMAGE DIV INSIDE FLUID-CONTAINER |===----------**/
-              //instanceName.fCreateBasicElement(titleId, counter, titleClass, appendedTo)
               imageBasicDiv.fCreateBasicElement(proj.title + "_Image", j3, "imageDivClass", fluidContainerIds);
+              let imageIds = $("#" + proj.title + "_Image" + j3); //GET IDS
+              aImageIds[aImageIds.length] = imageIds; //PUSH
 
               /**----------===| IMAGE CREATION |===----------**/
               let myImage = new Image();
-              let imagesPath = "./images/" + proj.title + "/";
-              myImage.src = imagesPath + imgs.imgName;
-              aImages[aImages.length] = myImage.src;
-
-              /**----------===| IMAGE DIV: IDS |===----------**/
-              let imageIds = $("#" + proj.title + "_Image" + j3);
-              //   console.log("imageIds: ", imageIds);
-              //   console.log("imageIds.height(): ", imageIds.height());
-
+              let imagesPath = "./images/" + proj.title + "/"; //FILEPATH
+              myImage.src = imagesPath + imgs.imgName; //CONCAT
+              aImages[aImages.length] = myImage.src; //PUSH
               /**----------===| IMAGE DIV: CSS |===----------**/
               /*        Populating the div with image        *
               **--------------------------------------------**/
               let columnHeight = twoColumnsImages.NewHeight;
               let columnWidth = twoColumnsImages.RightColumn;
-              //console.log("columnWidth:j3 ", columnWidth);
-              fBasicImageStyle(imageIds, columnHeight, columnWidth, myImage.src);
-              /**----------===| push ids to array |===----------**/
-              aImageIds[aImageIds.length] = imageIds;
+              fBasicImageStyle(imageIds, columnHeight, columnWidth, myImage.src); //
 
               /**----------===| KEEPING THE CAROUSELCONTROL HEIGHT SAME AS THE IMAGE HEIGHT |===----------**/
               //   let carouselControl = $(".carousel-control");
@@ -1504,54 +1488,10 @@
               });
               headerText.fTextQueries(gdContainerWidth, imageDescriptIds, imgDescSmlFontSize, imgDescMidFontSize, imgDescLrgFontSize);
 
-              /**----------===| IMAGE DESCRIPTION LINKS  |===----------**/
-
-              //let accu = $('.accusamus');
-              //   let accu = $('#linkX');
-              //   openLink.fWindowOpen(accu, "http://www.google.com");
-
-              //accu.attr("href", "http://www.google.com");
-              //   let accu = document.getElementById("linkX1");
-              //   accu.setAttribute("href", "http://www.google.com");
-              //   accu.css({
-              //     "color": "red"
-              //   })
-              //$('#linkX').attr("href", "http://www.google.com");
-              //accu.attr("onclick", "http://www.google.com");
-
-              //   accu.click(() => {
-              //     console.log("clicked!")
-              //     // location.href = "http://www.google.com";
-              //     // location.target = "_blank";
-              //     window.open('http://www.google.com', '_blank'); //, "toolbar=no,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
-              //   //href = "http://www.google.com"
-              //   //this.setAttribute("href", "http://www.google.com");
-              //   })
-
-              //document.getElementById("linkX1").setAttribute("href", "http://www.w3schools.com");
-
             } else {
               /**----------===| J3: VIDEO ONLY  |===----------**/
-              // console.log("proj.displayType:j3v ", proj.displayType);
-              // console.log("projRightColDivIds:j3v ", projRightColDivIds);
-              // console.log("fluidContainerIds:j3v ", fluidContainerIds);
-              // console.log("twoColumnsImgProjects.NewHeight:j3v ", twoColumnsImgProjects.NewHeight);
-              // console.log("twoColumnsImgProjects.RightColumn:j3v ", twoColumnsImgProjects.RightColumn);
-              // console.log("twoColumnsImages.NewHeight:j3v ", twoColumnsImages.NewHeight);
-              // console.log("twoColumnsImages.RightColumn:j3v ", twoColumnsImages.RightColumn);
-              // console.log(`
-              //   video width:  1280
-              //   video height: 720
-              //   `)
-              /**----------===| RIGHT COLUMN PERCENTAGE |===----------**/
-              //twoColumnsVideo.fTwoColumnsQueries(proj.imgRightColumnPercent, proj.imagesWidth, proj.imagesHeight);
-              /**----------===| push to array |===----------**/
-              //aVideoWidth[aVideoWidth.length] = twoColumnsVideo.RightColumn;
-              //aVideoHeight[aVideoHeight.length] = twoColumnsVideo.NewHeight;
               /**----------===| push to array |===----------**/
               aVideoColumnPercent[aVideoColumnPercent.length] = proj.imgRightColumnPercent;
-              //console.log("proj.imgRightColumnPercent:j3v ", proj.imgRightColumnPercent);
-              //console.log("aVideoColumnPercent:j3v ", aVideoColumnPercent);
               /**----------===| FLUID-CONTAINER: CSS: VIDEO |===----------**/
               fBasicDivStyle(fluidContainerIds, twoColumnsImgProjects.NewHeight, twoColumnsImgProjects.RightColumn, "relative");
               /**----------===| CREATE YOUTUBE VIDEO PLACEHOLDER  |===----------**/
@@ -1560,10 +1500,6 @@
               let videoPlaceholder = $("#video-placeholder");
               /**----------===| videoPlaceholder: Height & Width CSS |===----------**/
               fBasicDivStyle(videoPlaceholder, twoColumnsImgProjects.NewHeight, twoColumnsImgProjects.RightColumn, "relative");
-              // videoPlaceholder.css({
-              //   "height": twoColumnsImgProjects.NewHeight + "px"
-              // });
-
             } //END VIDEO
           }
         }
