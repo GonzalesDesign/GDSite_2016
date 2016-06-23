@@ -1,0 +1,42 @@
+{
+	"GDSite": [
+		{
+			"title": "WebGraphicsDesigns",
+			"sectionTitle": "Web & Graphics Designs",
+			"headerRightColumnPercent": "80",
+			"projects": [
+			{
+				"title"          : "OwnPhones",
+				"subTitle": "Wireless Earbuds Uno",
+				"paragraphRightColumnPercent": "80",
+				"projDescription": "At vero eos et accusamus et iusto odio <strong><a href = #urlLinkPage2 > hrefLinkHere</a></strong> <br/> <strong>MULTILINE INSIDE JSON SUCKS!</strong> You can use the Soft wrap under General in the preferences for displaying multiline inside JSON. For multiline entry. Qui blanditiis praesentium voluptatum, deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
+				"imagesWidth"    : "1066",
+				"imagesHeight": "593",
+				"imgRightColumnPercent": "50",
+				"displayType": "image",
+				"images": [
+				{"imgName": "AboutOP.jpg", "imgTitle": "About OwnPhones 1", "imgDescription": "AboutOP-02 description."
+				}, {"imgName": "Poster_Designer.jpg", "imgTitle": "About OwnPhones 2", "imgDescription": "AboutOP-02 description."
+				}, {"imgName": "Poster_Jewelry.jpg", "imgTitle": "About OwnPhones 3", "imgDescription": "AboutOP-02 description."
+				}, {"imgName": "Poster_OwnStyle.jpg", "imgTitle": "About OwnPhones 4", "imgDescription": "AboutOP-02 description."
+				}, {"imgName": "Jewelry.jpg", "imgTitle": "About OwnPhones 5", "imgDescription": "Jewelry-02 description."
+				}
+			]
+			}, {
+				"title"          : "OwnPhones",
+				"subTitle": "Video Animations",
+				"paragraphRightColumnPercent": "80",
+				"projDescription": "Short animations for the introduction of OwnPhones. ",
+				"imagesWidth"    : "1280",
+				"imagesHeight": "720",
+				"imgRightColumnPercent": "100",
+				"displayType": "video",
+				"images": [
+					{"imgName": "AboutOP.jpg", "imgTitle": "About OwnPhones 1", "imgDescription": "AboutOP-02 description."
+					}
+				]
+			}
+		]
+		}
+	]
+}
