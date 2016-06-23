@@ -1272,27 +1272,15 @@
           aLeftShaderIds[aLeftShaderIds.length] = leftShaderIds; //push to array
           //   console.log("leftShaderIds: ", leftShaderIds, j2);
           //   console.log("aLeftShaderIds: ", aLeftShaderIds);
-          /**----------===| CAROUSEL CONTROL: LEFT ARROW |===----------**/
+          /**----------===| CREATE GLYPHICON LEFT ARROW |===----------**/
           tagElement.fCreateTag("i", "glyphicon glyphicon-menu-left", "leftArrow", j2, leftShaderIds); //glyphicon glyphicon-menu-left glyphicon-chevron-left
 
           /**----------===| CAROUSEL CONTROL: RIGHT |===----------**/
           tagElement.fCreateTag("a", "carousel-control right", "rightCarousel", j2, projRightColDivIds);
-          const rightShaderIds = $("#rightCarouselId_" + j2); //get ids
-          //console.log("rightShaderIds: ", rightShaderIds);
-          /**----------===| push to array |===----------**/
-          aRightShaderIds[aRightShaderIds.length] = rightShaderIds;
-          //   console.log("rightShaderIds: ", rightShaderIds, j2);
-          //   console.log("aRightShaderIds[j2]: ", aRightShaderIds[j2]);
+          const rightShaderIds = $("#rightCarouselId_" + j2); //GET IDS
+          aRightShaderIds[aRightShaderIds.length] = rightShaderIds; //PUSH
 
           /**----------===| KEEPING THE CAROUSELCONTROL HEIGHT SAME AS THE IMAGE HEIGHT |===----------**/
-          //console.log("fluidContainerHeight: ", fluidContainerHeight);
-          //let carouselControl = $(".carousel-control");
-          //   leftShaderIds.css({
-          //     "height": twoColumnsImgProjects.NewHeight
-          //   })
-          //   rightShaderIds.css({
-          //     "height": twoColumnsImgProjects.NewHeight
-          //   })
           fBasicDivStyle(leftShaderIds, twoColumnsImgProjects.NewHeight, "null", "absolute");
           fBasicDivStyle(rightShaderIds, twoColumnsImgProjects.NewHeight, "null", "absolute");
 
@@ -1303,16 +1291,13 @@
           /**----------===| INVOKE NEXT PREVIOUS CLASS INSTANCE |===----------**/
           nxtPrv.fNextPrevNavigation(rightShaderIds, leftShaderIds, fluidContainerIds, twoColumnsImgProjects.RightColumn, fluidContainerWidth);
 
-          /**----------===| CAROUSEL CONTROL: RIGHT ARROW |===----------**/
+          /**----------===| CREATE GLYPHICON RIGHT ARROW |===----------**/
           tagElement.fCreateTag("i", "glyphicon glyphicon-menu-right", "rightArrow", j2, rightShaderIds); ////glyphicon glyphicon-menu-right  glyphicon-chevron-right
 
           /**----------===| On first enter the site all left image arrows are hidden |===----------**/
           leftShaderIds.hide();
 
           glyphicon = $(".glyphicon"); //GET CLASSNAME
-          //   glyphiconClass.css({
-          //     "top": "50%"
-          //   })
 
           /**----------===| J2: VIDEO ONLY  |===----------**/
           if (proj.displayType === "video") {
@@ -1320,35 +1305,6 @@
             /**----------===| Right Column: CSS Height & Width |===----------------------------------**/
             fBasicDivStyle(projRightColDivIds, twoColumnsImgProjects.NewHeight, twoColumnsImgProjects.RightColumn, "relative");
           }
-          //   /**----------===| CREATE NEW NEXT PREVIOUS CLASS INSTANCES |===----------**/
-          //   const nxtPrv = new nextPreviousNav.NextPrevNavClass();
-          //   /**----------===| push to array |===----------**/
-          //   aNxtPrv[aNxtPrv.length] = nxtPrv;
-
-          /**----------===| IMAGE NAVIGATION VARS |===----------**/
-          //   const rightArrow = rightShaderIds;
-          //   const leftArrow = leftShaderIds;
-          //   const imgContainer = fluidContainerIds;
-          //   const imgContainerWidth = twoColumnsImgProjects.RightColumn;
-          //const fluidContainerWidth = twoColumnsImgProjects.RightColumn * (proj.images.length + 1);
-          /**----------===| INVOKE NEXT PREVIOUS CLASS INSTANCE |===----------**/
-          //nxtPrv.fNextPrevNavigation(rightArrow, leftArrow, imgContainer, imgContainerWidth, fluidContainerWidth);
-
-          //TEST j2
-          // console.log("j2: ", j2, "----------------------------------------------------------------------");
-          // console.log(`
-          //   image width:             ${imgContainerWidth}
-          //   images count:            ${proj.images.length + 1}
-          //                            ------------------
-          //   container x position:    ${nxtPrv.fluidContainerLeftPosition}
-          //   fluid-container width:   ${fluidContainerWidth}
-          // `)
-          //console.log(j2, "-------------------------------------------------------------------------------: j2");
-          // console.log("nxtPrv:j2 ", nxtPrv);
-          // console.log("aNxtPrv[j2]:j2 ", aNxtPrv);
-          // console.log("nxtPrv.ImgContainer:j2 ", nxtPrv.ImgContainer);
-          // console.log("nxtPrv.fluidContainerWidth:j2 ", nxtPrv.fluidContainerWidth);
-          //console.log("nxtPrv.Num:j2 ", nxtPrv.Num);
 
           /**----------==========| PROJECT PARAGRAPHS |==========----------**/
           /**----------===| PARAGRAPH COLUMNS PERCENTAGE |===----------**/
@@ -1462,17 +1418,6 @@
               let columnHeight = twoColumnsImages.NewHeight;
               let columnWidth = twoColumnsImages.RightColumn;
               fBasicImageStyle(imageIds, columnHeight, columnWidth, myImage.src); //
-
-              /**----------===| KEEPING THE CAROUSELCONTROL HEIGHT SAME AS THE IMAGE HEIGHT |===----------**/
-              //   let carouselControl = $(".carousel-control");
-              //   let imageDivClass = $(".imageDivClass");
-              //   //   carouselControl.css({
-              //   //     "height": aImageIds[j3].height()
-              //   //   })
-              //   console.log("carouselControl: ", carouselControl);
-              //   console.log("imageDivClass: ", imageDivClass);
-              //   console.log("imageDivClass.height(): ", imageDivClass.height());
-              //   console.log("aImageIds[j3].height(): ", aImageIds[j3].height());
 
               /**----------===| IMAGE DESCRIPTIONS |===----------**/
               textDiv.fCreateTextDiv("imgDescription_", j3, "imgDescription_Class", imageIds, imgs.imgDescription);
