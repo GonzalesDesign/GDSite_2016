@@ -1233,15 +1233,9 @@
           let projRightColDivIds = $("#" + proj.title + "_ProjRight" + j2);
           /**----------===| Right Column: Basic CSS |===----------------------------------**/
           fBasicDivStyle(projRightColDivIds, twoColumnsImgProjects.NewHeight + additionalHeight, twoColumnsImgProjects.RightColumn, "relative");
-          /**----------===| push ids to array: images display |===----------**/
-          aProjRightColDivIds[aProjRightColDivIds.length] = projRightColDivIds;
-
-          /**----------===| PUSH DISPLAY TYPES TO ARRAY  |===----------**/
-          aProjectDisplay[aProjectDisplay.length] = proj.displayType;
-
-          aProjImagesLength[aProjImagesLength.length] = proj.images.length + 1;
-          //console.log("aProjImagesLength.length: j2 ", aProjImagesLength.length);
-          //console.log("proj.images.length + 1: j2 ", proj.images.length + 1);
+          aProjRightColDivIds[aProjRightColDivIds.length] = projRightColDivIds; //push
+          aProjectDisplay[aProjectDisplay.length] = proj.displayType; //push
+          aProjImagesLength[aProjImagesLength.length] = proj.images.length + 1; //push
 
           /**----------===| CREATE FLUID-CONTAINER INSIDE RIGHT COLUMN |===----------**/
           createDiv.fCreateBasicElement(proj.title + "_FluidContainer_", j2, "fluidContainerClass", projRightColDivIds);

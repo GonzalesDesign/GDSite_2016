@@ -15,7 +15,7 @@
                 {"imgName": "intro_04.jpg", "imgTitle": "Speak", "imgDescription": "Jewelry-04 description.", "colorTheme": "#8F73A8"}
             ],
 			"codingTitle" : "Coding This Site",
-			"codingThisSite" : "This site is built mostly with Javascript code. Content are supplied from a JSON files. It's an experiment I wanted to do, to practice the new ES6. <br> The following libraries are used: jquery, bootstrap, youTube api and tweenmax for animation. Running on node.js, webpack modules, and babel transpiler. CSS are written in Sass SCSS. Here's a link to my <a href = 'https://github.com/GonzalesDesign/GD_Uno/tree/master/GD_Uno_060316/jsX'  target = '_blank'>github</a> repo. <br><br> <span class='closeCoding'>Close this pop-up.</span>"
+			"codingThisSite" : "This site is built mostly with Javascript code. Content are supplied from a JSON files. It's an experiment I wanted to do, to practice the new ES6. <br> The following libraries are used: jquery, bootstrap, youTube api and tweenmax for animation. Running on node.js, webpack modules, and babel transpiler. CSS are written in Sass SCSS. Here's a link to my <a href = 'https://github.com/GonzalesDesign/GDSite_2016'  target = '_blank'>github</a> repo. <br><br> <span class='closeCoding'>Close this pop-up.</span>"
 		}
 	]
 }
