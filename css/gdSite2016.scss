@@ -440,10 +440,13 @@ $midWhite : rgb(200, 200, 200);
 
 /**-------===| End css class generated from js |===-------**/
 
-// a:link { color: #b93838 }
-// a:visited { color: #439343 }
-// a:hover { color: #2d6da8 }
-// a:active { color: #ccc }
+  // a:link { color: #b93838 }
+  // a:visited {
+  //     text-decoration: none;
+  //  }
+  // a:hover { text-decoration: none;
+  //  }
+  // a:active { color: #ccc }
 
 .glyphicon {
     color: white;
@@ -468,4 +471,37 @@ $midWhite : rgb(200, 200, 200);
 // #nycBikeFlashSample {
 //     cursor: pointer;
 //     //color: white;
+//     a:link { color: #b93838 }
+//     visited {
+//         color: #b93838;
+//         text-decoration: none;
+//      }
+//     // a:hover {
+//     // color: #b93838;
+//     //     text-decoration: none;
+//     //  }
+//     a:active { color: #ccc }
 // }
+a:hover #nycBikeFlashSample {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited #nycBikeFlashSample {
+    color: yellowGreen;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+// a:hover #akonFlashSample {
+//     color: red;
+//     background-color: transparent;
+//     text-decoration: none;
+// }
+// a:visited #akonFlashSample {
+//     color: yellowGreen;
+//     background-color: transparent;
+//     text-decoration: none;
+// }
+
+//#nycBikeFlashSample a:hover { color: #70DB93; }

@@ -1,0 +1,53 @@
+*{
+	margin: 0 0;
+}
+body{
+
+}
+header{
+	height: 40px;
+	background-color: white;
+	position: fixed;
+	width: 100%;
+}
+article{
+
+}
+footer{
+
+}
+/*Header*/
+#logo{
+	float: left;
+	margin: 7px 30px;
+}
+#navmenu{
+	float: left;
+	/*margin: 10px 30px;*/
+}
+ul#nav{
+	list-style: none;	
+	margin: 10px 30px;
+}
+ul#nav li{
+	float: left;
+	margin: 0 20px;
+}
+/*Sections*/
+#home{
+	height: 500px;
+	width: 100px;
+	background-color: red;
+}
+#portfolio{
+	height: 500px;
+	width: 100px;
+	background-color: blue;
+	margin-left: 300px;
+}
+#contact{
+	height: 500px;
+	width: 100px;
+	background-color: green;
+	margin-left: 300px;
+}

@@ -15,6 +15,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
+    "build": "babel src -d lib",
     "start": "webpack-dev-server ./js/gdSite2016.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +23,13 @@
     "es6"
   ],
   "author": "odee",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzalesDesign/GDSite_2016.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GonzalesDesign/GDSite_2016/issues"
+  },
+  "homepage": "https://github.com/GonzalesDesign/GDSite_2016#readme"
 }

@@ -835,7 +835,7 @@
 
     fWindowOpen(idName, pageToOpen) {
       idName.click(() => {
-        console.log("clicked!")
+        //console.log("clicked!")
         // location.href = "http://www.google.com";
         window.open(pageToOpen, '_blank'); //, "toolbar=no,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
       })
@@ -845,8 +845,47 @@
 
   //openLink.fWindowOpen(idName, pageToOpen)
 
+  /**----------=====| fWindowOpen2: FUNCTION FOR OPENING TEXT LINKS |=====----------**/
+  /**DESCRIPTION: To open page link from the image description link
+  --------------------------------------------------------------------**/
+  let fWindowOpen2 = (idName, pageToOpen, fs) => {
+    //console.log("idName: ", idName);
+    //console.log("pageToOpen: ", pageToOpen);
+    if (pageToOpen === "noLink") {
+      //link is null!
+    } else {
+      idName.mouseover(() => {
+        idName.css({
+          "color": "Orange",
+          "cursor": "pointer",
+          "text-decoration": "none"
+        })
+      })
+      idName.mouseout(() => {
+        idName.css({
+          "color": "yellow"
+        })
+      })
+      idName.click(() => {
+        //console.log("clicked!")
+        // location.href = "http://www.google.com";
+        //window.open(pageToOpen, '_blank'); //, "toolbar=no,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+        //window.open(pageToOpen, "_blank", "fs", "fullscreen=yes")
+        if (fs === "yes") {
+          window.open(pageToOpen, '_blank', 'height=' + screen.height + ', width=' + screen.width);
+        } else {
+          window.open(pageToOpen, '_blank');
+        }
+      })
+    }
+  }
+
   /**----------=====| FUNCTION FOR ROLLOVER AND ROLLOUT |=====----------**/
   function fRollEvents(elem, origColor) {
+    console.log("elem: ", elem);
+    elem.css({
+      "color": origColor
+    })
     elem.mouseover(() => {
       elem.css({
         "color": "Orange",
@@ -856,7 +895,8 @@
     })
     elem.mouseout(() => {
       elem.css({
-        "color": origColor
+        "color": origColor,
+        "text-decoration": "none"
       })
     })
   }
@@ -1040,8 +1080,8 @@
 
         fToggleBtn(toggleBtn, codingThisSite);
         fToggleBtn(closeCoding, codingThisSite);
-        fRollEvents(toggleBtn, "#949494")
-        fRollEvents(closeCoding, "#5780a2")
+        fRollEvents(toggleBtn, "#949494");
+        fRollEvents(closeCoding, "#5780a2");
 
         /**----------===| CREATE IMAGE DIV INSIDE INTROFLUIDCONTAINER |===----------**/
         imageBasicDiv.fCreateBasicElement(introData.title + "_IntroImg", jx, "introDivClass", introFluidContainer);
@@ -1090,6 +1130,8 @@
   //   });
   // }
 
+
+
   const fRunAjax = () => {
     let promise = $.get("./js/json/ajaxData2_simple.json");
     //let promise = $.get("./js/json/ajaxData2_2ProjectsV.json");
@@ -1102,56 +1144,70 @@
       let j2 = 0;
       let j3 = 0;
 
-      // console.log(`
-      // /**|===============================|**/
-      // /**|      SECTIONS JSON LOOP       |**/
-      // /**|===============================|**/
-      // `);
+      console.log(`
+      /**|===============================|**/
+      /**|      SECTIONS JSON LOOP       |**/
+      /**|===============================|**/
+      data.GDSite: ${data.GDSite[0].projects[0].images[0].linkURL}
+      `);
+      /**----------===| LINKS TO OPEM TO ANOTHER WINDOW |===----------**/
+      //   let nycBikeFlashSampleXX = $('#nycBikeFlashSampleXX');
+      //   //let nycBikeFlashSampleX = $("#" + data.GDSite[0].projects[0].images[0].linkURL);
+      //   //   let nycBikeFlashSample = $(nycBikeFlashSampleX)
+      //   //   console.log("nycBikeFlashSample: ", nycBikeFlashSample);
+      //   //fRollEvents(nycBikeFlashSample, "white");
+      //   fWindowOpen2(nycBikeFlashSampleXX, "http://www.google.com");
+      //
+      //   let idTest = (data.GDSite[0].projects[0].images[0].linkURL);
+      //   //let idTest2 = idTest.toString();
+      //   let idTest2 = new String(idTest);
+      //   console.log("idTest: ", idTest);
+      //   console.log(idTest2 instanceof String);
+      //   //let nycBikeFlashSampleX = document.getElementById(idTest2);
+      //   let nycBikeFlashSampleX = $("#" + idTest2);
+      //   console.log("nycBikeFlashSampleX: ", nycBikeFlashSampleX);
+      //   let imgDescription_1 = $("#imgDescription_1")
+      //   imgDescription_1.css({
+      //     "border": "1px solid white"
+      //   })
+      //   let nycBikeFlashSample = $(data.GDSite[0].projects[0].images[0].linkURL);
+      //   fRollEvents(nycBikeFlashSample, "white");
+
+      //   let personalFreshLinkId = $("#personalFreshLinkId");
+      //   let personalFreshLink = data.GDSite[0].projects[2].images[0].linkURL;
+      //   console.log("personalFreshLinkId: ", personalFreshLinkId);
+      //   console.log("personalFreshLink: ", personalFreshLink);
+      //   fWindowOpen2(personalFreshLinkId, personalFreshLink);
 
       //TEMP fScreenQueries();
       for (let sect of data.GDSite) {
         j1++;
+        console.log(`Section j1: ${j1} ${sect.title}`);
+        // /**----------===| LINKS TO OPEM TO ANOTHER WINDOW |===----------**/
+        // let nycBikeFlashSample = $('#nycBikeFlashSample');
+        // fRollEvents(nycBikeFlashSample, "white");
+        //
+        // let akonFlashSample = $('#akonFlashSample');
+        // fRollEvents(akonFlashSample, "white");
 
-        /**----------===| LINKS TO OPEM TO ANOTHER WINDOW |===----------**/
-        let nycBikeFlashSample = $('#nycBikeFlashSample');
-        //let nycBikeFlashSample = document.getElementById("nycBikeFlashSample");
-        // nycBikeFlashSample.css({
-        //   "cursor": "pointer",
-        //   "hover": "red"
-        // })
-        fRollEvents(nycBikeFlashSample, "white");
+        //openLink.fWindowOpen(nycBikeFlashSample, "http://www.google.com");
+        //fWindowOpen2(nycBikeFlashSample, "http://www.google.com");
 
-        // nycBikeFlashSample.hover(function() {
-        //   $(this).fadeOut(100);
-        //   $(this).fadeIn(500);
-        // });
+        // let akonFlashSample = $('#akonFlashSample');
+        // console.log("akonFlashSample: ", akonFlashSample);
+        // fRollEvents(akonFlashSample, "white");
+        // fWindowOpen2(akonFlashSample, "http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/");
 
-        openLink.fWindowOpen(nycBikeFlashSample, "http://www.google.com");
-
-        aSectionsCount[aSectionsCount.length] = sect;
-        // console.log(`
-        //   <•----------------------------------•>
-        //   aSectionsCount.length:j1 :  ${aSectionsCount.length}
-        //   ${sect.title}
-        //   <•----------------------------------•>
-        //   `);
+        aSectionsCount[aSectionsCount.length] = sect; //PUSH
 
         /**----------===| INVOKE SECTION COLUMNS |===----------**/
         twoColumnsHeaderSection.fTwoColumnsQueries(gdContainerWidth, sect.headerRightColumnPercent, arbitraryNum, arbitraryNum);
-
-        //logoTitleColumnPercent = sect.headerRightColumnPercent;
-
-        /**----------===| push to array |===----------**/
         aSectionsRightColumnPercent[aSectionsRightColumnPercent.length] = sect.headerRightColumnPercent;
 
         /**----------===| CREATE SECTION HEADER CONTAINER |===----------------------------------------**/
         createDiv.fCreateBasicElement(sect.title, j1, "sectionHeaderClass", gdContainer);
-        /**----------===| Sections Header: Container Ids |===----------**/
         let sectDivIds = $("#" + sect.title + j1);
-        /**s----------===| Basic CSS: (id, height, width) |===----------**/
         fBasicDivStyle(sectDivIds, "auto", gdContainerWidth, "relative");
-
-        /**----------===| push to array |===----------**/
         aSectionHeaders[aSectionHeaders.length] = sectDivIds;
 
         /**----------===| CREATE SECTION HEADER DIVIDER |===----------------------------------------**/
@@ -1164,38 +1220,27 @@
 
         /**----------===| CREATE HEADER LEFT COLUMN |===------------------------------------------------------------**/
         createDiv.fCreateBasicElement(sect.title + "_Left", j1, "sectionHeaderLeftColmnClass", sectDivIds);
-        /**----------===| Left Column: Ids |===----------**/
         let sectLeftIds = $("#" + sect.title + "_Left" + j1);
-        /**s----------===| Left Column: Basic CSS |===----------**/
         fBasicDivStyle(sectLeftIds, arbitraryNum, twoColumnsHeaderSection.LeftColumn, "relative");
-        /**----------===| push to array |===----------**/
         aSectionHeadrLeftColmn[aSectionHeadrLeftColmn.length] = sectLeftIds;
 
         /**----------===| CREATE HEADER RIGHT COLUMN |===-------------------------------------------------------------**/
         createDiv.fCreateBasicElement(sect.title + "_Right", j1, "sectionHeaderRightColmnClass", sectDivIds);
-        /**----------===| Sections Header Right Column: Ids |===----------**/
         let sectRightIds = $("#" + sect.title + "_Right" + j1);
-        /**s----------===| Sections Header Right Column: Basic Style |===----------**/
         fBasicDivStyle(sectRightIds, "auto", twoColumnsHeaderSection.RightColumn, "relative");
-        /**----------===| push to array use for animation |===----------**/
         aSectionHeadrRightColmn[aSectionHeadrRightColmn.length] = sectRightIds;
+
         /**----------===| Sections Header Title Text |===----------**/
         sectionHeaderText.fBasicTextContent(sect.title + "_Text", j1, "sectionHeaderTxtContentClass", sectRightIds, sect.sectionTitle);
-        /**----------===| Sections Header Title Text: Ids |===----------**/
         let sectionTitleIds = $("#" + sect.title + "_Text" + j1);
-        /**s----------===| Sections Header Title Text: Basic Style |===----------**/
         fBasicDivStyle(sectionTitleIds, "auto", twoColumnsHeaderSection.RightColumn, "relative");
         headerText.fTextQueries(gdContainerWidth, sectionTitleIds, headerSmlFontSize, headerMidFontSize, headerLrgFontSize);
-        /**----------===| push to array use for animation |===----------**/
         aSectionHeadrTitles[aSectionHeadrTitles.length] = sectionTitleIds;
 
-        // console.log(`
-        // /**|===============================|**/
-        // /**|      PROJECTS JSON LOOP       |**/
-        // /**|===============================|**/
-        // `);
         for (let proj of sect.projects) {
           j2++;
+          console.log(`
+              Project j2: ${j2} ${proj.title}`);
           /**----------===| Divider tag for DOM and style inspection in the browser dev view for testing |===----------**/
           tagElement.fCreateTag("i", "Divider:-------------------====•", proj.title, j2, gdContainer);
           /**----------===| PUSH TO ARRAY: PROJECT COUNT |===----------**/
@@ -1360,11 +1405,11 @@
           /**----------===| CREATE PROJECT DESCRIPTIONS |===----------**/
           textDiv.fCreateTextDiv(proj.title + "_ProjDescription", j2, "projDescriptionClass", paragRightColDivIds, proj.projDescription);
           // Get Id
-          let paraghProjDescriptionIds = $("#" + proj.title + "_ProjDescription" + j2);
+          let paraghProjlinkURLs = $("#" + proj.title + "_ProjDescription" + j2);
           // Pust to array
-          aParagraphProjDescription[aParagraphProjDescription.length] = paraghProjDescriptionIds;
+          aParagraphProjDescription[aParagraphProjDescription.length] = paraghProjlinkURLs;
           // Apply text screen queries
-          headerText.fTextQueries(gdContainerWidth, paraghProjDescriptionIds, projDescSmlFontSize, projDescMidFontSize, projDescLrgFontSize);
+          headerText.fTextQueries(gdContainerWidth, paraghProjlinkURLs, projDescSmlFontSize, projDescMidFontSize, projDescLrgFontSize);
 
 
           //console.log("gdContainerWidth:3 ", gdContainerWidth);
@@ -1426,6 +1471,11 @@
                 "margin-top": twoColumnsImgProjects.NewHeight + "px"
               });
               headerText.fTextQueries(gdContainerWidth, imageDescriptIds, imgDescSmlFontSize, imgDescMidFontSize, imgDescLrgFontSize);
+
+              /**----------===| OPEN DESCRIPTION LINK |===----------**/
+              let fullScreen = imgs.fullScreen;
+              let linkToOpen = imgs.linkURL;
+              fWindowOpen2(imageDescriptIds, linkToOpen, fullScreen);
 
             } else {
               /**----------===| J3: VIDEO ONLY  |===----------**/
@@ -1585,14 +1635,15 @@
       headerText.fTextQueries(gdContainerWidth, aSectionHeadrTitles[e1], headerSmlFontSize, headerMidFontSize, headerLrgFontSize);
 
 
-      aSectionHeadrLeftColmn[e1].css({
-        //"background-color": "cyan",
-        "border-top": "4px solid red"
-      })
-      aSectionHeadrRightColmn[e1].css({
-        //"background-color": "cyan",
-        "border-top": "4px solid yellowGreen"
-      })
+      //TEMP
+      //   aSectionHeadrLeftColmn[e1].css({
+      //     //"background-color": "cyan",
+      //     "border-top": "4px solid red"
+      //   })
+      //   aSectionHeadrRightColmn[e1].css({
+      //     //"background-color": "cyan",
+      //     "border-top": "4px solid yellowGreen"
+      //   })
 
       // TEMP
       // aSectionHeadrTitles[e1].css({
@@ -1607,94 +1658,34 @@
     for (let e2 = 0; e2 < aProjectsCount.length; e2++) {
       /**----------===| PROJECT COLUMNS PERCENTAGE |===----------**/
       twoColumnsImgProjects.fTwoColumnsQueries(gdContainerWidth, aProjectRightColumnPercent[e2], aImagesOrigWidth[e2], aImagesOrigHeight[e2]);
-      /**----------===| Project Container: Basic Style |===----------**/
       fBasicDivStyle(aProjContainerIds[e2], "auto", gdContainerWidth, "relative");
-      //anim.fAnimateHeightWidth(aProjContainerIds[e2], "auto", gdContainerWidth, animTymSlow);
-      /**----------===| Left Column: Basic Style |===----------**/
       fBasicDivStyle(aProjLeftColDivIds[e2], arbitraryNum, twoColumnsImgProjects.LeftColumn, "relative");
-      //anim.fAnimateHeightWidth(aProjLeftColDivIds[e2], arbitraryNum, twoColumnsImgProjects.LeftColumn, animTymSlow);
-      /**----------===| Right Column: Basic CSS |===----------**/
       fBasicDivStyle(aProjRightColDivIds[e2], twoColumnsImgProjects.NewHeight + additionalHeight, twoColumnsImgProjects.RightColumn, "relative");
-      //anim.fAnimateHeightWidth(aProjRightColDivIds[e2], twoColumnsImgProjects.NewHeight + additionalHeight, twoColumnsImgProjects.RightColumn, animTymSlow);
-      //fBasicDivStyle(aProjRightColDivIds[e2], twoColumnsImgProjects.NewHeight + additionalHeight, "auto", "relative");
-
-      //if (aProjectDisplay[e2] === "image") {
-      //additionalHeight = 60;
-      /**----------===| Project Container Right Column: Basic CSS |===----------**/
       fBasicDivStyle(aFluidContainerIds[e2], twoColumnsImgProjects.NewHeight + additionalHeight, twoColumnsImgProjects.RightColumn * aProjImagesLength[e2], "relative");
-      //anim.fAnimateHeightWidth(aFluidContainerIds[e2], twoColumnsImgProjects.NewHeight + additionalHeight, twoColumnsImgProjects.RightColumn * aProjImagesLength[e2], animTymSlow);
-      /**----------===| Keep the fluid container height and width synch |===----------**/
 
       /**----------===| E2: VIDEO |===----------**/
       if (aProjectDisplay[e2] === "video") {
-        //console.log("aProjectDisplay[e2]: ", aProjectDisplay[e2]);
-        //console.log("aFluidContainerIds[e2]: ", aFluidContainerIds[e2]);
-        /**----------===| Right Column: Basic CSS |===----------**/
         fBasicDivStyle(aProjRightColDivIds[e2], twoColumnsImgProjects.NewHeight, twoColumnsImgProjects.RightColumn, "relative");
-        /**----------===| FLUID-CONTAINER: CSS: VIDEO |===----------**/
         fBasicDivStyle(aFluidContainerIds[e2], twoColumnsImgProjects.NewHeight, twoColumnsImgProjects.RightColumn, "relative");
-        /**----------===| VIDEO ID |===----------**/
         let videoPlaceholder = $("#video-placeholder");
-        /**----------===| videoPlaceholder: Height & Width CSS |===----------**/
         fBasicDivStyle(videoPlaceholder, twoColumnsImgProjects.NewHeight, twoColumnsImgProjects.RightColumn, "relative");
-        //anim.fAnimateHeightWidth(videoPlaceholder, twoColumnsImgProjects.NewHeight, twoColumnsImgProjects.RightColumn, animTymSlow);
-        //anim.fXSlider(videoPlaceholder, 0);
-
-        //fBasicDivStyle(aProjRightColDivIds[e2], twoColumnsImgProjects.NewHeight, twoColumnsImgProjects.RightColumn, "relative");
-        //fBasicDivStyle(aFluidContainerIds[e2], twoColumnsImgProjects.NewHeight, twoColumnsImgProjects.RightColumn * aProjImagesLength[e2], "relative");
-        //fluidContainerWidth = twoColumnsImgProjects.RightColumn;
-        // let xTestId = $("#OwnPhones_FluidContainer_4");
-        // xTestId.css({
-        //   //"width": twoColumnsImgProjects.RightColumn
-        // });
-        //youTubeVideo.fCreateVideoDiv("video-placeholder", OwnPhones_FluidContainer_4, twoColumnsImgProjects.NewHeight, twoColumnsImgProjects.RightColumn);
-        //console.log("twoColumnsImgProjects.NewHeight:video ", twoColumnsImgProjects.NewHeight);
-        //console.log("twoColumnsImgProjects.RightColumn:video ", twoColumnsImgProjects.RightColumn);
-
       }
-      //let rightArrow = aRightShaderIds[e2];
-      //let leftArrow = aLeftShaderIds[e2];
       aNxtPrv[e2].ImgContainer = aFluidContainerIds[e2];
       aNxtPrv[e2].ImgContainerWidth = twoColumnsImgProjects.RightColumn;
       aNxtPrv[e2].fluidContainerWidth = twoColumnsImgProjects.RightColumn * aProjImagesLength[e2];
-
-      /**----------===| SETTING LEFT & RIGHT NAV HEIGHT |===----------**/
       fBasicDivStyle(aLeftShaderIds[e2], twoColumnsImgProjects.NewHeight, "null", "absolute");
       fBasicDivStyle(aRightShaderIds[e2], twoColumnsImgProjects.NewHeight, "null", "absolute");
-      //   glyphicon.css({
-      //     "top": "50%"
-      //   })
-
       anim.fXSlider(aFluidContainerIds[e2], -(aNxtPrv[e2].ImgContainerWidth * aNxtPrv[e2].Num));
-      // anim.fXSlider(aImageFluidContainerIds[0], -(nxtPrev2Columns.NxtPos));
-      //a2ColImgProjRightCol[a2ColImgProjRightCol.length] = twoColumnsImgProjects.RightColumn;
-
-      // TEST e2
-      // console.log(e2, "e2:-----------------------------------");
-      // //console.log("aNxtPrv[e2]:e2 ", aNxtPrv[e2]);
-      // console.log("aFluidContainerIds[e2]:e2 ", aFluidContainerIds[e2]);
-      // console.log("aNxtPrv[e2].ImgContainerWidth:e2 ", aNxtPrv[e2].ImgContainerWidth);
-      // console.log("aNxtPrv[e2].fluidContainerWidth:e2 ", aNxtPrv[e2].fluidContainerWidth);
-      // console.log("aNxtPrv[e2].Num:e2 ", aNxtPrv[e2].Num);
-      //console.log("e2:----------------------------------------------------");
       /**----------===| Project Paragraph Columns |===----------**/
       twoColumnsParagProjects.fTwoColumnsQueries(gdContainerWidth, aParagraphRightColumnPercent[e2], 0, 0);
-      /**----------===| Project Paragraph Container: Basic CSS |===----------**/
       fBasicDivStyle(aParagraphContainer[e2], "auto", gdContainerWidth, "relative");
-      /**----------===| Project Paragraph Left Column: Basic CSS |===----------**/
       fBasicDivStyle(aProjParagLeftDivIds[e2], arbitraryNum, twoColumnsParagProjects.LeftColumn, "relative");
-      /**----------===| Project Paragraph Right Column: Basic CSS |===----------**/
       fBasicDivStyle(aProjParagRightDivIds[e2], "auto", twoColumnsParagProjects.RightColumn, "relative");
 
       headerText.fTextQueries(gdContainerWidth, aParaghProjTitleIds[e2], projTitleSmlFontSize, projTitleMidFontSize, projTitleLrgFontSize);
       headerText.fTextQueries(gdContainerWidth, aParaghProjSubTitleIds[e2], projSubTitleSmlFontSize, projSubTitleMidFontSize, projSubTitleLrgFontSize);
       headerText.fTextQueries(gdContainerWidth, aParagraphProjDescription[e2], projDescSmlFontSize, projDescMidFontSize, projDescLrgFontSize);
 
-    //} else {
-    /**----------===| Video Project Container Right Column: Basic CSS |===----------**/
-    //fBasicDivStyle(aFluidContainerIds[3], twoColumnsImgProjects.NewHeight, twoColumnsImgProjects.RightColumn); // * aProjImagesLength[e2], "relative");
-    //console.log("aFluidContainerIds[3]: ", aFluidContainerIds[3]);
-    //}
     }
   }
 

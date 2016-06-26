@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8"/>
+	<title>Responsive Parallax</title>
+<!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.6.0.0.min.js"></script>
+    <style>
+        .edgeLoad-GD_RESPONSIVEPARALLAX { visibility:hidden; }
+    </style>
+<script>
+   AdobeEdge.loadComposition('playPen7b', 'GD_RESPONSIVEPARALLAX', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "undefined",
+    width: "1366px",
+    height: "10000px"
+}, {
+    dom: [
+        {
+            id: 'preloader2',
+            type: 'image',
+            tag: 'img',
+            rect: ['135px', '96px', '62px', '18px', 'auto', 'auto'],
+            fill: ["rgba(0,0,0,0)",'images/preloader2.gif','0px','0px']
+        }
+    ],
+    style: {
+        '${symbolSelector}': {
+            isStage: true,
+            rect: [undefined, undefined, '1366px', '10000px']
+        }
+    }
+}, {"dom":[{"id":"updateBrowser","type":"image","tag":"img","linkURL":"http://www.updateyourbrowser.net/en/","linkTarget":"newWindow","rect":["0","0","1366px","768px","auto","auto"],"fill":["rgba(0,0,0,0)","images/updateBrowser.jpg","0px","0px"]}]});
+</script>
+<!--Adobe Edge Runtime End-->
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/TimelineMax.min.js"></script>
+
+</head>
+<body style="margin:0;padding:0;">
+	<div id="Stage" class="GD_RESPONSIVEPARALLAX">
+	</div>
+</body>
+</html>
