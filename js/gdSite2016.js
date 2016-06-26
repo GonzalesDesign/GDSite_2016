@@ -9,7 +9,12 @@
    ** FILES IMPORTED FROM OTHER JS FILES
    ** SEPERATE JS FILES FOR EASIER READABILITY AND MAINTENANCE
    **----------------------------------------------------------------**/
-
+  // let $ = require("jquery");
+  // require('bootstrap');
+  const TweenMax = require('gsap');
+  //const YouTubeIframeLoader = require('youtube-iframe');
+  //let onYouTubeIframeAPIReady = require('./ytpScript');
+  require('./smoothscroll');
   /**----------=====| nextPreviousNav |=====----------**/
   const nextPreviousNav = require('./nextPreviousArrows');
   // const nextPreviousImage = new nextPreviousNav.NextPreviousClass();
@@ -848,7 +853,7 @@
   /**----------=====| fWindowOpen2: FUNCTION FOR OPENING TEXT LINKS |=====----------**/
   /**DESCRIPTION: To open page link from the image description link
   --------------------------------------------------------------------**/
-  let fWindowOpen2 = (idName, pageToOpen, fs) => {
+  let fWindowOpen2 = (idName, pageToOpen, fs, scrnHt, scrnWt) => {
     //console.log("idName: ", idName);
     //console.log("pageToOpen: ", pageToOpen);
     if (pageToOpen === "noLink") {
@@ -867,14 +872,29 @@
         })
       })
       idName.click(() => {
+        if (scrnHt === "screen.height") {
+          scrnHt = window.screen.height;
+          console.log("scrnHt: ", scrnHt);
+          console.log(typeof scrnHt);
+        }
+        if (scrnWt === "screen.width") {
+          scrnWt = window.screen.width;
+          console.log("scrnWt: ", scrnWt);
+        }
         //console.log("clicked!")
         // location.href = "http://www.google.com";
         //window.open(pageToOpen, '_blank'); //, "toolbar=no,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
         //window.open(pageToOpen, "_blank", "fs", "fullscreen=yes")
         if (fs === "yes") {
-          window.open(pageToOpen, '_blank', 'height=' + screen.height + ', width=' + screen.width);
+          //window.open(pageToOpen, '_blank', 'height=' + screen.height + ', width=' + screen.width);
+          window.open(pageToOpen, '_blank', 'height=' + scrnHt + ', width=' + scrnWt);
+          console.log("scrnHt: ", scrnHt);
+          console.log("scrnWt: ", scrnWt);
+
         } else {
           window.open(pageToOpen, '_blank');
+          console.log("scrnHt: ", scrnHt);
+          console.log("scrnWt: ", scrnWt);
         }
       })
     }
@@ -1475,7 +1495,18 @@
               /**----------===| OPEN DESCRIPTION LINK |===----------**/
               let fullScreen = imgs.fullScreen;
               let linkToOpen = imgs.linkURL;
-              fWindowOpen2(imageDescriptIds, linkToOpen, fullScreen);
+              //console.log(typeof imgs.scrnHeight)
+              //console.log(typeof screen.height);
+              //   let screenHeight = parseInt(imgs.scrnHeight);
+              //   let screenWidth = parseInt(imgs.scrnWidth);
+              //console.log(imgs.scrnWidth);
+              //console.log(screenWidth);
+              let screenHeight = imgs.scrnHeight;
+              let screenWidth = imgs.scrnWidth;
+
+
+
+              fWindowOpen2(imageDescriptIds, linkToOpen, fullScreen, screenHeight, screenWidth);
 
             } else {
               /**----------===| J3: VIDEO ONLY  |===----------**/
