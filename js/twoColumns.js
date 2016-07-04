@@ -57,6 +57,21 @@
     }
   }
 
+  /**--------------------------------------------**/
+  class ThreeColumnsClass {
+    constructor() {}
+
+    fThreeColumns(contnrWidth) {
+      console.log("contnrWidth: ", contnrWidth);
+      let oneThird = contnrWidth / 3;
+      console.log("oneThird: ", oneThird);
+    }
+  }
+  ;
+  // let oneThirdTest = new ThreeColumnsClass();
+  // oneThirdTest.fThreeColumns();
+  /**--------------------------------------------**/
+
   class TextQueriesClass {
     constructor() {
       //   this.contnrWidth = contnrWidth;
@@ -95,6 +110,9 @@
    **----------------------------------------------------------------**/
   module.exports.TwoColumnsQueriesClass = TwoColumnsQueriesClass;
   module.exports.TextQueriesClass = TextQueriesClass;
+
+  module.exports.ThreeColumnsClass = ThreeColumnsClass;
+
   /**----------------------------------------------------------------**/
   console.log(`
   Filename: twoColumns.js

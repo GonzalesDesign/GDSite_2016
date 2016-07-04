@@ -25,10 +25,19 @@ var webpack = require('webpack');
 module.exports = {
   context: __dirname,
   devtool: debug ? "inline-sourcemap" : null,
-  entry: "./js/gdSite2016.js",
+  entry: "./js/gdSite2016.es6",
   output: {
-    path: __dirname + "/js",
-    filename: "gdSite2016Bundle.js"
+    path: __dirname + "./js/",
+    filename: "es6Bundled/gdSite2016.js"
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/, loader: 'babel-loader',
+        exclude: /node_modules/,
+        test: /\.css$/, loader: 'style!css!'
+      }
+    ]
   },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
@@ -37,5 +46,5 @@ module.exports = {
       mangle: false,
       sourcemap: false
     }),
-  ],
+  ]
 }

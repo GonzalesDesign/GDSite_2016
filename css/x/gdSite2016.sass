@@ -1,0 +1,506 @@
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+p {
+    //font-family: "Open Sans", sans-serif;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 1em;
+    margin-top: 10px;
+    color: dimgrey;
+}
+
+$yellow : #f7e92e;
+$lightYellowGreenish : #d6f5a3;
+$midGrey : rgb(95, 108, 112);
+$liteGrey : rgb(136, 146, 149);
+$midWhite : rgb(200, 200, 200);
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #b0d0a0;
+    border: 0px solid orange;
+}
+
+
+.container {
+    height: auto; /*100%;*/
+    /*margin-right: auto;
+    margin-left: auto;*/
+    padding-left: 0px;
+    padding-right: 0px;
+    // -webkit-box-shadow: 0px 0px 12px 3px rgba(25, 25, 25, 0.10);
+    // box-shadow: 0px 0px 20px 10px rgba(25, 25, 25, 0.10);
+    /*background-color: #80d06b;*/
+    border: 1px solid blue;
+}
+
+
+.introFluidContainer{
+    width : 100%;
+    height: 100%; //auto;
+}
+
+.introContainerClass{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(20, 20, 20, .5);
+    border: 1px solid $yellow;
+}
+
+.introDivClass {
+    //background: url(images/bg.jpg) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+.codingContainer{
+    position: absolute;
+}
+
+.codingThisSite{
+    height : 200px;
+    width : 400px;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    float: left;
+    margin-top: 0px;
+    background-color : rgba(white, .90);
+    z-index: 200;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    border: 1px solid rgb(120, 127, 130);
+    //-webkit-box-shadow: 0px 0px 12px 3px rgba(25, 25, 25, 0.50);
+    //box-shadow: 0px 0px 20px 10px rgba(25, 25, 25, 0.50);
+}
+
+.codingTitleClass{
+    font-family: "Open Sans", sans-serif;
+    //font-family: 'PT Sans', sans-serif;
+	//font-family: 'PT Sans Caption', sans-serif;
+	//font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    text-align: left;
+    line-height : 150%;
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: $midGrey;
+    //color: red;
+}
+
+.codingDescriptionClass{
+    //font-family: "Open Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
+	//font-family: 'PT Sans Caption', sans-serif;
+	//font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 100;
+    font-size: 1.2em;
+    text-align: left;
+    line-height : 150%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: $midGrey;
+}
+
+
+.codingBtn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .75);
+    padding: 0px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    color: #949494;
+    text-decoration: none;
+
+    //.hover { color: #9dcc00 }
+    // .btn-link:link { color: #c00 }
+    // // a:visited { color: #0c0 }
+    // .codingBtn:hover { color: #9dcc00 }
+    // // a:active { color: #ccc }
+    //
+}
+
+// .closeCoding {
+//     cursor: pointer;
+//     color: #5780a2;
+// }
+//
+// .codingBtn:active, .codingBtn.active  { color: #ccb800 }
+// .codingBtn:link, .codingBtn.link { color: #c00 }
+// .codingBtn:visited, .codingBtn.visited { color: #1484ec }
+// .codingBtn:hover { color: #9dcc00 }
+// .btn-link:active, .btn-link:focus, .btn-link:hover {
+//     border-color: transparent;
+//     color: yellow;
+// }
+
+.logoContainer{
+    background-color: rgba(20, 20, 20, .75);
+    border-top: 4px double dimgrey;
+    border-bottom: 6px double dimgrey;
+    position: absolute; //relative absolute
+    float: left;
+    z-index: 100;
+    //color : rgba(0,221,221,1)
+    //display : none;
+}
+
+/**----------===| Intro Title |===----------**/
+.logoTitleClass {
+    font-family: "Oswald", sans-serif;
+    //font-weight: 300;
+    font-size: 8em;
+    text-transform: uppercase;
+    //color : rgba(teal, .75);
+    color: rgba($midWhite, .7);
+    line-height : 100%;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+    margin-top: 20px;
+    border-top: 4px solid yellowGreen;
+    border: 0px solid yellowGreen;
+}
+
+.logoSubTitleClass{
+    //font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    text-transform : uppercase;
+    //color: goldenrod;
+    //color: $midWhite;
+    color: #dacaa2;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .75);
+    border: 0px solid #4eff06;
+
+    // .pasionate{
+    //     color: #dacaa2;
+    //     //color: $midWhite;
+    // }
+    // .artsColor {
+    //     color: #a38585;
+    //     //color: $midWhite;
+    // }
+    // .designsColor {
+    //     color: #949494;
+    //     //color: $midWhite;
+    // }
+    // .codingColor {
+    //     color: #7d9f9f;
+    //     //color: $midWhite;
+    // }
+}
+
+
+
+.calloutClass{
+    font-size: .9em;
+    font-weight: 200;
+    //padding-left: 10px;
+    letter-spacing: 1px;
+    text-transform : uppercase;
+    color: #949494;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    margin-top: 40px;
+    border: 0px solid #4eff06;
+}
+
+.gdContainer{
+    //width : 90%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    -webkit-box-shadow: 0px 0px 12px 3px rgba(25, 25, 25, 0.10);
+    box-shadow: 0px 0px 20px 10px rgba(25, 25, 25, 0.10);
+    //background-color: #80d06b;
+    //float: left;
+    border: 0px solid red;
+}
+
+/*.mainContainer {
+  padding: 0;
+  margin: 0;
+}*/
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.columnDiv {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #b0d0a0;
+    border: 0px solid red;
+}
+
+.rightColumn {
+    padding-left: 0px;
+    padding-right: 0px;
+    //background-color: #cad080;
+    border: 1px solid red;
+}
+
+/**-------===| These css class are generated from js |===-------**/
+/**----------===| Sections Header Container |===----------**/
+.sectionDividerClass{
+    height : 5px;
+    background-color : Orange;
+}
+.sectionHeaderClass{
+    /*sectionHeaderContainer*/
+    background-color : rgb(49, 112, 143);
+    color : rgb(207, 236, 245);
+    //padding-top: 10px;
+    padding-bottom: 15px;
+    border-top: 0px solid orangeRed;
+    border-bottom: 0px solid orangeRed;
+
+    .sectionHeaderLeftColmnClass{
+        border: 0px solid #989891;
+        //background-color : rgba($yellow, 0.5);
+    }
+
+    .sectionHeaderTxtContentClass{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        font-size: 1.8em;
+        text-transform : uppercase;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+        letter-spacing: 2px;
+        padding-top: 10px;
+        border: 0px solid rgb(152, 152, 145);
+    }
+
+}
+
+/**----------===| Project Container |===----------**/
+.projectContainerClass{
+    margin-top : 0px;
+    border-top : 1px solid #E9E0E0;
+    /*border: 0px solid rgb(175, 232, 13);*/
+
+    .projectLeftColmnClass{
+        //background-color: #bff4c0;
+    }
+}
+
+
+
+.sectTitleClassXXX {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+    /*margin-top: 20px;
+    margin-bottom: 20px;*/
+    /*border: 1px solid redrgb(181, 41, 10);*/
+}
+
+.OwnPhones_LeftClassXXX {
+    /*background-color: #f6e14e;*/
+}
+
+.HBCBS_LeftClassXXX {
+    /*background-color: #f4bc72;*/
+}
+
+.PersonalFresh_LeftClassXXX {
+    /*background-color: #f47c30;*/
+}
+
+/**----------===| Project Title |===----------**/
+.projTitleClass {
+    //font-family: "Oswald", sans-serif;
+    //font-weight: 300;
+    //font-family: "Open Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
+	//font-family: 'PT Sans Caption', sans-serif;
+	//font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: 10px;
+    color: grayrgb(56, 60, 60);
+    border: 0px solid yellowGreen;
+}
+
+.projSubTitleClass {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: $liteGrey;
+    border: 0px solid #44cdb5;
+}
+
+.projDescriptionClass {
+    /*font-family: "Open Sans", sans-serif;*/
+    font-family: "Merriweather", "Open Sans", sans-serif;
+    //font-family: 'PT Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 150%;
+    padding-right: 50px;
+    margin-bottom: 100px;
+    color: $liteGrey; //rgb(131, 129, 127);
+    border: 0px solid #cd47c1;
+}
+
+
+
+
+
+/*Paragraph left column class*/
+.projLeftColumnClass {
+    height: 10px;
+    /*background-color: #92f4f1;*/
+}
+
+/*Paragraph right column class*/
+.projRightColumnClass {
+    /*background-color: #f4f1e4;*/
+}
+
+/**----------===| Project Container Right Column |===----------**/
+.projectRightColmnClass{
+    background-color: #31708f;
+    overflow : hidden; /*image cropper*/
+    border-top: 2px solid #3e3e3e;
+    border-bottom: 2px solid #3e3e3e;
+    border: 0px solid cyan;
+}
+
+/**----------===| Project Paragraph Container |===----------**/
+.paragraphContainerClass{
+    //background-color: #ecebc1;
+
+    /**----------===| Project Paragraph Left Column |===----------**/
+    .paragraphLeftColumnClass{
+        //background-color: #cef68d;
+    }
+
+    /**----------===| Project Paragraph Right Column |===----------**/
+    .paragraphRightColumnClass{
+        //background-color: #a8f1f4;
+    }
+}
+
+// .projectImageFluidContainerClass{
+//     /*background-color: #ecd6f7;*/
+//     border: 1px solid #e615d3;
+// }
+
+// .OwnPhones_FluidContainer_Class, .HBCBS_FluidContainer_Class, .PersonalFresh_FluidContainer_Class, .Filipinas_FluidContainer_Class {
+//     /*background-color: #92f4f1;*/
+//     /*border: 1px solid #cd47c1;*/
+//     border-top: 10px solid;
+//     border-bottom: 10px solid;
+// }
+
+.imgDescription_Class {
+    /* Make a generic class style for the innerHTML text */
+    /*font-family: "Open Sans", sans-serif;*/
+    //font-family: "Merriweather", serif;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: right;
+    width: 100%;
+    height: 50px;
+    /*position: relative;*/
+    padding-top: 10px;
+    padding-right: 20px;
+    /*margin-top: 100px;*/
+    /*margin-bottom: auto;*/
+    color: rgb(211, 230, 236);
+    border: 0px solid #cd47c1;
+}
+
+/**-------===| End css class generated from js |===-------**/
+
+  // a:link { color: #b93838 }
+  // a:visited {
+  //     text-decoration: none;
+  //  }
+  // a:hover { text-decoration: none;
+  //  }
+  // a:active { color: #ccc }
+
+.glyphicon {
+    color: white;
+    top: 50%;
+    font-size: 2em;
+}
+
+/*.carousel-control{
+    color: white;
+}*/
+
+
+#video-placeholder{
+    background-color : #404440;
+}
+
+.accusamus{
+    color : Orange;
+}
+
+// #nycBikeFlashSample {
+//     cursor: pointer;
+//     //color: white;
+//     a:link { color: #b93838 }
+//     visited {
+//         color: #b93838;
+//         text-decoration: none;
+//      }
+//     // a:hover {
+//     // color: #b93838;
+//     //     text-decoration: none;
+//     //  }
+//     a:active { color: #ccc }
+// }
+a:hover #nycBikeFlashSample {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited #nycBikeFlashSample {
+    color: yellowGreen;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+// a:hover #akonFlashSample {
+//     color: red;
+//     background-color: transparent;
+//     text-decoration: none;
+// }
+// a:visited #akonFlashSample {
+//     color: yellowGreen;
+//     background-color: transparent;
+//     text-decoration: none;
+// }
+
+//#nycBikeFlashSample a:hover { color: #70DB93; }

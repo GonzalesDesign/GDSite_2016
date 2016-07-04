@@ -2,22 +2,25 @@
   "name": "gd-uno-x",
   "version": "1.0.0",
   "description": "gdSite2016",
-  "main": "./js/gdSite2016.js",
+  "main": "./js/gdSite2016.es6",
   "dependencies": {
-    "babel-cli": "^6.7.5",
-    "gulp-update": "^0.0.2"
+    "babel-cli": "^6.10.1"
   },
   "devDependencies": {
-    "babel-core": "^6.7.*",
+    "babel-core": "^6.10.4",
+    "babel-plugin-syntax-flow": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
     "css-loader": "^0.23.1",
-    "gulp": "^3.9.1",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.0",
+    "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
     "build": "babel src -d lib",
-    "start": "webpack-dev-server ./js/gdSite2016.js",
+    "start": "webpack-dev-server ./js/gdSite2016.es6",
+    "startX": "webpack ./js/gdSite2016.js ./js/es6Bundled/gdSite2016.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

@@ -7,7 +7,7 @@
 			"projects": [
 			{
 				"title"          : "OwnPhones",
-				"subTitle": "<span id='linkX1'>Wireless Earbuds Uno</span>",
+				"subTitle": "<span id='linkX1'>Wireless Earbuds Unox</span>",
 				"paragraphRightColumnPercent": "80",
 				"projDescription": "At vero eos et <span class='accusamus' id='link'>accusamus</span> et iusto odio <strong><a href = #urlLinkPage2 > hrefLinkHere</a></strong> <br/> <strong>MULTILINE INSIDE JSON SUCKS!</strong> You can use the Soft wrap under General in the preferences for displaying multiline inside JSON. For multiline entry. Qui blanditiis praesentium voluptatum, deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
 				"imagesWidth"    : "1066",
@@ -15,16 +15,16 @@
 				"imgRightColumnPercent": "80",
 				"displayType": "image",
 				"images": [
-				{"imgName": "AboutOP.jpg", "imgTitle": "About OwnPhones 1", "imgDescription": "About OwnPhones", "linkURL":"http://google.com", "fullScreen":"no", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-				{"imgName": "Poster_Designer.jpg", "imgTitle": "About OwnPhones 2", "imgDescription": "AboutOP-02 description.", "linkURL":"https://github.com/GonzalesDesign/GDSite_2016", "fullScreen":"no", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-				{"imgName": "Poster_Jewelry.jpg", "imgTitle": "About OwnPhones 3", "imgDescription": "AboutOP-03 description.", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-				{"imgName": "Poster_OwnStyle.jpg", "imgTitle": "About OwnPhones 4", "imgDescription": "AboutOP-04 description.", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/StaxGallery/ElNidoPalawan/", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-				{"imgName": "Jewelry.jpg", "imgTitle": "About OwnPhones 5", "imgDescription": "Jewelry-02 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"}
+				{"imgName": "AboutOP.jpg", "imgTitle": "About OwnPhones 1", "imgDescription": "About OwnPhones <span class='glyphicon glyphicon-expand'/>", "linkURL":"http://google.com", "fullScreen":"no", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":"Click to open the link."},
+				{"imgName": "Poster_Designer.jpg", "imgTitle": "About OwnPhones 2", "imgDescription": "AboutOP-02 description.", "linkURL":"https://github.com/GonzalesDesign/GDSite_2016", "fullScreen":"no", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":"Click to open the link."},
+				{"imgName": "Poster_Jewelry.jpg", "imgTitle": "About OwnPhones 3", "imgDescription": "AboutOP-03 description.", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":"Click to open the link."},
+				{"imgName": "Poster_OwnStyle.jpg", "imgTitle": "About OwnPhones 4", "imgDescription": "AboutOP-04 description.", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/StaxGallery/ElNidoPalawan/", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":"Click to open the link."},
+				{"imgName": "Jewelry.jpg", "imgTitle": "About OwnPhones 5", "imgDescription": "Jewelry-02 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""}
 			]
 			},
 			{
 				"title"          : "OwnPhonesVideo",
-				"subTitle": "Video Animations",
+				"subTitle": "Video Animations: It's not loading at start up. You have to reload page.",
 				"paragraphRightColumnPercent": "80",
 				"projDescription": "Short animations for the introduction of OwnPhones. Modeled and rendered using Cinema4D and composited in FinalCut Pro.",
 				"imagesWidth"    : "1280",
@@ -40,20 +40,20 @@
 				"title"          : "PersonalFresh",
 				"subTitle": "eStore",
 				"paragraphRightColumnPercent": "80",
-				"projDescription": "This was my eStore for apparel tops and canvas prints. Collection of my digital illustrations printed on t-shirts, jackets and canvas.",
+				"projDescription": "This was my eStore for apparel tops and posters prints. Collection of my digital illustrations printed on t-shirts, hoodies and posters.",
 				"imagesWidth"    : "627",
-				"imagesHeight": "1000",
+				"imagesHeight": "900",
 				"imgRightColumnPercent": "80",
 				"displayType": "image",
 				"images": [
-				{"imgName": "RealFresh.jpg", "imgTitle": "PersonalFresh Promo Banner", "imgDescription": "PersonalFresh Promo Banner", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-				{"imgName": "DeffFresh.jpg", "imgTitle": "PersonalFresh Promo Banner", "imgDescription": "PersonalFresh Promo Banner", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-				{"imgName": "SpeakHoodieFemale.jpg", "imgTitle": "Speak Female Hoodies", "imgDescription": "Speak Female Hoodies", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-				{"imgName": "DreamcatcherPoster.jpg", "imgTitle": "Dreamcatcher Poster", "imgDescription": "Dreamcatcher Poster", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-				{"imgName": "TShirts.jpg", "imgTitle": "T-Shirts", "imgDescription": "T-Shirts", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-				{"imgName": "SpeakHoodieMale.jpg", "imgTitle": "Speak Male Hoodies", "imgDescription": "Speak Male Hoodies", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-				{"imgName": "SpeakPoster.jpg", "imgTitle": "Speak Poster", "imgDescription": "Speak Poster", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-				{"imgName": "UnfurlingPoster.jpg", "imgTitle": "Unfurling The Chrysalis Poster", "imgDescription": "Unfurling The Chrysalis Poster", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"}
+				{"imgName": "RealFresh.jpg", "imgTitle": "PersonalFresh Promo Banner", "imgDescription": "PersonalFresh Promo Banner", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+				{"imgName": "DeffFresh.jpg", "imgTitle": "PersonalFresh Promo Banner", "imgDescription": "PersonalFresh Promo Banner", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+				{"imgName": "SpeakHoodieFemale.jpg", "imgTitle": "Speak Female Hoodies", "imgDescription": "Speak Female Hoodies", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+				{"imgName": "DreamcatcherPoster.jpg", "imgTitle": "Dreamcatcher Poster", "imgDescription": "Dreamcatcher Poster", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+				{"imgName": "TShirts.jpg", "imgTitle": "T-Shirts", "imgDescription": "T-Shirts", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+				{"imgName": "SpeakHoodieMale.jpg", "imgTitle": "Speak Male Hoodies", "imgDescription": "Speak Male Hoodies", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+				{"imgName": "SpeakPoster.jpg", "imgTitle": "Speak Poster", "imgDescription": "Speak Poster", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+				{"imgName": "UnfurlingPoster.jpg", "imgTitle": "Unfurling The Chrysalis Poster", "imgDescription": "Unfurling The Chrysalis Poster", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""}
 			]
 			},
 			{
@@ -66,8 +66,8 @@
 				"imgRightColumnPercent": "80",
 				"displayType": "image",
 				"images": [
-					{"imgName": "Poster_Designer.jpg", "imgTitle": "Designer Series", "imgDescription": "OwnPhones Designer Series", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-					{"imgName": "Poster_OwnStyle.jpg", "imgTitle": "OwnStyle Series", "imgDescription": "OwnStyle", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"}
+					{"imgName": "Poster_Designer.jpg", "imgTitle": "Designer Series", "imgDescription": "OwnPhones Designer Series", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+					{"imgName": "Poster_OwnStyle.jpg", "imgTitle": "OwnStyle Series", "imgDescription": "OwnStyle", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""}
 				]
 			},
 			{
@@ -80,8 +80,8 @@
 				"imgRightColumnPercent": "80",
 				"displayType": "image",
 				"images": [
-					{"imgName": "HBCBS-00.jpg", "imgTitle": "HBCBS-00", "imgDescription": "Horizon Site.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-					{"imgName": "HBCBS-01.jpg", "imgTitle": "HBCBS-01", "imgDescription": "HBCBS Interactive Annual Report", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"}
+					{"imgName": "HBCBS-00.jpg", "imgTitle": "HBCBS-00", "imgDescription": "Horizon Site.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+					{"imgName": "HBCBS-01.jpg", "imgTitle": "HBCBS-01", "imgDescription": "HBCBS Interactive Annual Report", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""}
 				]
 			}
 		]
@@ -100,34 +100,36 @@
 					"imgRightColumnPercent": "100",
 					"displayType": "image",
 					"images": [
-						{"imgName": "FilipinasMural-01.jpg", "imgTitle": "FilipinasMural-01", "imgDescription": "Me standing in front of my painting.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-						{"imgName": "FilipinasMural-03.jpg", "imgTitle": "FilipinasMural-03", "imgDescription": "FilipinasMural-03 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-						{"imgName": "FilipinasMural-04.jpg", "imgTitle": "FilipinasMural-04", "imgDescription": "FilipinasMural-04 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-						{"imgName": "FilipinasMural-05.jpg", "imgTitle": "FilipinasMural-05", "imgDescription": "FilipinasMural-05 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-						{"imgName": "FilipinasMural-06.jpg", "imgTitle": "FilipinasMural-06", "imgDescription": "FilipinasMural-06 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-						{"imgName": "FilipinasMural-07.jpg", "imgTitle": "FilipinasMural-07", "imgDescription": "FilipinasMural-07 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"}
+						{"imgName": "FilipinasMural-01.jpg", "imgTitle": "FilipinasMural-01", "imgDescription": "Me standing in front of my painting.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+						{"imgName": "FilipinasMural-03.jpg", "imgTitle": "FilipinasMural-03", "imgDescription": "FilipinasMural-03 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+						{"imgName": "FilipinasMural-04.jpg", "imgTitle": "FilipinasMural-04", "imgDescription": "FilipinasMural-04 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+						{"imgName": "FilipinasMural-05.jpg", "imgTitle": "FilipinasMural-05", "imgDescription": "FilipinasMural-05 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+						{"imgName": "FilipinasMural-06.jpg", "imgTitle": "FilipinasMural-06", "imgDescription": "FilipinasMural-06 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+						{"imgName": "FilipinasMural-07.jpg", "imgTitle": "FilipinasMural-07", "imgDescription": "FilipinasMural-07 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""}
 					]
 				},
 				{
-					"title"          : "PersonalFresh",
+					"title"          : "Digital_Illustrations",
 					"subTitle": "eStore",
 					"paragraphRightColumnPercent": "80",
 					"projDescription": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ",
-					"imagesWidth"    : "345",
-					"imagesHeight": "460",
+					"imagesWidth"    : "1044",
+					"imagesHeight": "1080",
 					"imgRightColumnPercent": "80",
 					"displayType": "image",
 					"images": [
-					{"imgName": "PF-00.jpg", "imgTitle": "About PersonalFresh", "imgDescription": "Yellow shirt girl.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-					{"imgName": "PF-01.jpg", "imgTitle": "About PersonalFresh", "imgDescription": "Miss Vv.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-					{"imgName": "PF-02.jpg", "imgTitle": "About PersonalFresh", "imgDescription": "My little china girl.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"}
+					{"imgName": "MeltingPot.jpg", "imgTitle": "MeltingPot", "imgDescription": "Melting Pot", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+					{"imgName": "SamsOrchids.jpg", "imgTitle": "SamsOrchids", "imgDescription": "Sam's Orchids", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+					{"imgName": "StarFish.jpg", "imgTitle": "StarFish", "imgDescription": "StarFish", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+					{"imgName": "Unfurling.jpg", "imgTitle": "Unfurling", "imgDescription": "Unfurling The Chrysalis", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+					{"imgName": "Speak.jpg", "imgTitle": "Speak", "imgDescription": "Speak", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""}
 				]
 				}
 			]
 		},
 		{
-			"title": "Experimental",
-			"sectionTitle": "Experimental",
+			"title": "Interactive",
+			"sectionTitle": "Interactive",
 			"headerRightColumnPercent": "80",
 			"projects": [
 				{
@@ -135,29 +137,29 @@
 					"subTitle": "Flash: Stax Gallery",
 					"paragraphRightColumnPercent": "80",
 					"projDescription": "Picture gallery built in Flash using ActionScript3. A gallery template that fed from an XML file. All media content are entered in the xml file. Themes and fonts are also provided. To access the control panel, put the cursor at the bottom of the page. Images automatically advances at set time, left and right arrows are provided to manually see the next or previous image, you can also use the right and left arrow keys in the keyboard. Unfinished personal project. ",
-					"imagesWidth"    : "544",
-					"imagesHeight": "449",
+					"imagesWidth"    : "1925",
+					"imagesHeight": "1004",
 					"imgRightColumnPercent": "80",
 					"displayType": "image",
 					"images": [
-						{"imgName": "elnido.jpg", "imgTitle": "elnido", "imgDescription": "Me standing in front of my painting.", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/StaxGallery/ElNidoPalawan/", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-						{"imgName": "birdcage.jpg", "imgTitle": "birdcage", "imgDescription": "FilipinasMural-03 description.", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/StaxGallery/MetalBirdcage/", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-						{"imgName": "nycmotorshow.jpg", "imgTitle": "nycmotorshow", "imgDescription": "FilipinasMural-04 description.", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/StaxGallery/NYC_Motorshow2009/", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"}
+						{"imgName": "ElNido.jpg", "imgTitle": "elnido", "imgDescription": "El Nido Palawan, Philippines <span class='glyphicon glyphicon-expand'/>", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/StaxGallery/ElNidoPalawan/", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":"Click to open the link."},
+						{"imgName": "Birdcage.jpg", "imgTitle": "birdcage", "imgDescription": "Junkyard Sculpture <span class='glyphicon glyphicon-expand'/>", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/StaxGallery/MetalBirdcage/", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":"Click to open the link."},
+						{"imgName": "NYCBikeShow.jpg", "imgTitle": "nycmotorshow", "imgDescription": "NYC Motorcycle Show <span class='glyphicon glyphicon-expand'/>", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/StaxGallery/NYC_Motorshow2009/", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":"Click to open the link."}
 					]
 				},
 				{
 					"title"          : "PlayPen",
 					"subTitle": "Handbuild Crib",
 					"paragraphRightColumnPercent": "80",
-					"projDescription": "Adobe Animate application was an attempt to regain the animation market on the html world. It was closely modeled from Flash application but after couple of years in the market only a few uses it's potential. This site is a prototype done in Animate. An experiment on parallax scrolling featuring a playpen I built for my son. My <a href = 'https://github.com/GonzalesDesign/Playpen'  target = '_blank'>github</a> repo for this project.",
-					"imagesWidth"    : "960",
-					"imagesHeight": "431",
+					"projDescription": "Adobe Animate application was an attempt to regain the animation market on the html world. It was closely based from the Flash app but after couple of years in the market only a few uses it's potential. This site is a prototype done in Animate. An experiment on parallax scrolling featuring a playpen I built for my son. My <a href = 'https://github.com/GonzalesDesign/GDSite_2016/tree/master/autreSites/playPen7'  target = '_blank'>github</a> repo for this project.",
+					"imagesWidth"    : "1040",
+					"imagesHeight": "768",
 					"imgRightColumnPercent": "80",
 					"displayType": "image",
 					"images": [
-						{"imgName": "PlaypenCover.jpg", "imgTitle": "PlaypenCover", "imgDescription": "Parallax Scrolling", "linkURL":"./autreSites/playPen7/playPen7b.html", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-						{"imgName": "crib-01.jpg", "imgTitle": "crib-01", "imgDescription": "FilipinasMural-03 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"},
-						{"imgName": "crib-03.jpg", "imgTitle": "crib-03", "imgDescription": "FilipinasMural-04 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width"}
+						{"imgName": "PlaypenCover.jpg", "imgTitle": "PlaypenCover", "imgDescription": "Parallax Scrolling <span class='glyphicon glyphicon-expand'/>", "linkURL":"./autreSites/playPen7/playPen7b.html", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":"Click to open the link."},
+						{"imgName": "crib-01.jpg", "imgTitle": "crib-01", "imgDescription": "FilipinasMural-03 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""},
+						{"imgName": "crib-03.jpg", "imgTitle": "crib-03", "imgDescription": "FilipinasMural-04 description.", "linkURL":"noLink", "fullScreen":"yes", "scrnHeight":"screen.height", "scrnWidth":"screen.width", "hoverTitle":""}
 					]
 				},
 				{
@@ -170,11 +172,11 @@
 					"imgRightColumnPercent": "80",
 					"displayType": "image",
 					"images": [
-						{"imgName": "konvict01.jpg", "imgTitle": "Akon Konvict", "imgDescription": "Konvict Interactive Intro", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"850", "scrnWidth":"1400"},
-						{"imgName": "konvict02.jpg", "imgTitle": "Akon Konvict", "imgDescription": "Konvict Interactive Intro", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"850", "scrnWidth":"1400"},
-						{"imgName": "konvict03.jpg", "imgTitle": "Akon Konvict", "imgDescription": "Konvict Interactive Intro", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"850", "scrnWidth":"1400"},
-						{"imgName": "konvict04.jpg", "imgTitle": "Akon Konvict", "imgDescription": "Konvict Interactive Intro", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"850", "scrnWidth":"1400"},
-						{"imgName": "konvict05.jpg", "imgTitle": "Akon Konvict", "imgDescription": "Konvict Interactive Intro", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"850", "scrnWidth":"1400"}
+						{"imgName": "konvict01.jpg", "imgTitle": "Akon Konvict", "imgDescription": "Konvict Interactive Intro <span class='glyphicon glyphicon-expand'/>", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"850", "scrnWidth":"1400", "hoverTitle":"Click to open the link."},
+						{"imgName": "konvict02.jpg", "imgTitle": "Akon Konvict", "imgDescription": "Konvict Interactive Intro <span class='glyphicon glyphicon-expand'/>", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"850", "scrnWidth":"1400", "hoverTitle":"Click to open the link."},
+						{"imgName": "konvict03.jpg", "imgTitle": "Akon Konvict", "imgDescription": "Konvict Interactive Intro <span class='glyphicon glyphicon-expand'/>", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"850", "scrnWidth":"1400", "hoverTitle":"Click to open the link."},
+						{"imgName": "konvict04.jpg", "imgTitle": "Akon Konvict", "imgDescription": "Konvict Interactive Intro <span class='glyphicon glyphicon-expand'/>", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"850", "scrnWidth":"1400", "hoverTitle":"Click to open the link."},
+						{"imgName": "konvict05.jpg", "imgTitle": "Akon Konvict", "imgDescription": "Konvict Interactive Intro <span class='glyphicon glyphicon-expand'/>", "linkURL":"http://www.rlgonzales.com/Scroll/images/ANIMATIONS/Flash/Akon/", "fullScreen":"yes", "scrnHeight":"850", "scrnWidth":"1400", "hoverTitle":"Click to open the link."}
 					]
 				}
 			]
